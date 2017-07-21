@@ -16,10 +16,7 @@ $(document).ready(function(){
     var pizzaSizeCost = parseInt($("input:radio[name=size]:checked").val());
     var pizzaCheeseCost = parseInt($("input:radio[name=cheese]:checked").val());
     var pizzaMeatCost = parseInt($("input:radio[name=meat]:checked").val());
-    console.log(pizzaVegCost);
-    console.log(pizzaSizeCost);
-    console.log(pizzaCheeseCost);
-    console.log(pizzaMeatCost);
+
     var totalPrice = new pizza(pizzaMeatCost,pizzaCheeseCost,pizzaSizeCost,pizzaVegCost);
 
     $("#pizza-prices").text(totalPrice.newPizza());
