@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h2>Collin's Crazy Pizzeria</h2>
+        <h2>Collin's Crazy Simple Pizzeria</h2>
       </div>
       <form id="pizza-menu">
         <div class="form-group">
@@ -35,20 +35,70 @@
                   Provolone
                 </label>
               </div>
+              <p>What type of veggies would you like?</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="veg" value="1" checked>
+                  Pineapple
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="veg" value="3">
+                  Mushrooms
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="veg" value="2">
+                  Banana Peppers
+                </label>
+              </div>
             </div>
             <div class="col-md-6">
-              <p>What size pizza would you like</p>
-              <select class="form-control" id="size">
-                <option value="8" type = "text">Small</option>
-                <option value="10" type = "text">Medium</option>
-                <option value="12" type = "text">Large</option>
-                <option value="14" type = "text">Extra Large</option>
-              </select>
+              <p>What size would you like?</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="6" checked>
+                  Small
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="9">
+                  Medium
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="12">
+                  Large
+                </label>
+              </div>
+              <p>What kind of meat would you like?</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="meat" value="1" checked>
+                  Pepperoni
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="meat" value="2">
+                  Bacon
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="meat" value="2">
+                  Ham
+                </label>
+              </div>
             </div>
+          </div>
           <button type="submit" class="btn btn-success">Submit Survey</button>
           </form>
-        <span id="pizza-responses">
-          <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+        <span id="pizza-prices">
         </span>
       </div>
 

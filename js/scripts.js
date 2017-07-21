@@ -1,32 +1,28 @@
 //buisness logic
-function pizza(toppings,size,cost)  {
-  this.topping = topping;
+function pizza(veg,size,meat,cheese)  {
+  this.veg = veg
   this.size = size
-  this.sauce =sauce
+  this.cheese = cheese
+  this.meat = meat
 };
 pizza.prototype.newPizza = (function()  {
-  return this.pizza + this.size + this.topping;
+  return this.veg + this.size + this.cheese + this.meat;
 });
-
-
-
 //user interface
 $(document).ready(function(){
-  // var pizzaSizeCost = ("#size").val();
   $("#pizza-menu").submit(function(event){
     event.preventDefault();
-    var pizzaSauceCost = $("input:radio[name=flavor]:checked").val();
-    $("input:checkbox[name=work-transportation]:checked").each(function(){
-      var pizzaToppingCost = parseInt($(this).val());
+    var pizzaVegCost = parseInt($("input:radio[name=veg]:checked").val());
+    var pizzaSizeCost = parseInt($("input:radio[name=size]:checked").val());
+    var pizzaCheeseCost = parseInt($("input:radio[name=cheese]:checked").val());
+    var pizzaMeatCost = parseInt($("input:radio[name=meat]:checked").val());
+    console.log(pizzaVegCost);
+    console.log(pizzaSizeCost);
+    console.log(pizzaCheeseCost);
+    console.log(pizzaMeatCost);
+    var totalPrice = new pizza(pizzaMeatCost,pizzaCheeseCost,pizzaSizeCost,pizzaVegCost);
 
-      $('#pizza-responses').append(pizzaToppingCost + "<br>");
-      console.log(pizzaToppingCost)
-      // var totalPrice = new pizza (pizzaToppingCost, pizzaSizeCost, pizzaSauceCost);
+    $("#pizza-prices").text(totalPrice.newPizza());
 
-    });
-
-    console.log(pizzaToppingCost)
-
-    // $('#transportation_survey').hide();
   });
 });
