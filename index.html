@@ -13,39 +13,46 @@
         <h2>Collin's Crazy Pizzeria</h2>
       </div>
       <form id="pizza-menu">
-       <div class="form-group">
-         <p>What type of cheese would you like on your pizza?</p>
-         <input type="checkbox" name="work-transportation" value="0"> Mozzarella<br>
-         <input type="checkbox" name="work-transportation" value="2">Provolone.<br>
-         <input type="checkbox" name="work-transportation" value="2">Buffalo mozzarella<br>
-         <input type="checkbox" name="work-transportation" value="1">Ricotta<br>
-         <p>What veggies do you want on your pizza.</p>
-         <input type="checkbox" name="work-transportation" value="1">Pineapple.<br>
-         <input type="checkbox" name="work-transportation" value="1">Olives.<br>
-         <input type="checkbox" name="work-transportation" value="2">Mushrooms.<br>
-         <input type="checkbox" name="work-transportation" value="1">Bananan peppers.<br>
-         <input type="checkbox" name="work-transportation" value="1">Bell peppers<br>
-         <p>What type of meat do you want on your pizza?</p>
-         <input type="checkbox" name="work-transportation" value="1">Pepperoni.<br>
-         <input type="checkbox" name="work-transportation" value="1">Bacon<br>
-         <input type="checkbox" name="work-transportation" value="1">Ham.<br>
-         <input type="checkbox" name="work-transportation" value="1">Chicken.<br>
-         <input type="checkbox" name="work-transportation" value="2">Anchovies.<br>
-         <input type="checkbox" name="work-transportation" value="2">Buffalo chicken.<br>
-         <input type="checkbox" name="work-transportation" value="3">Cajun-seasoned shrimp.<br>
-         <p>What size pizza would you like</p>
-         <select class="form-control" id="size">
-           <option value="8">Small</option>
-           <option value="10">Medium</option>
-           <option value="12">Large</option>
-           <option value="14">Extra Large</option>
-         </select>
-       </div>
-      <button type="submit">Submit Survey</button>
-      </form>
-   <span id="pizza-responses">
-     <p><b>You use the following methods of transportation to travel to work or school:</b></p>
-   </span>
- </div>
-</body>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <p>What type of cheese would you like on your pizza?</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="cheese" value="1" checked>
+                  Mozzarella
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="cheese" value="3">
+                  Buffalo Mozzarella
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="cheese" value="2">
+                  Provolone
+                </label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p>What size pizza would you like</p>
+              <select class="form-control" id="size">
+                <option value="8" type = "text">Small</option>
+                <option value="10" type = "text">Medium</option>
+                <option value="12" type = "text">Large</option>
+                <option value="14" type = "text">Extra Large</option>
+              </select>
+            </div>
+          <button type="submit" class="btn btn-success">Submit Survey</button>
+          </form>
+        <span id="pizza-responses">
+          <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+        </span>
+      </div>
+
+    </div>
+  </div>
+  </body>
 </html>
